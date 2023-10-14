@@ -26,8 +26,11 @@ while numeroEscolhido != 5:
                 multiplicacao = primeiroNumero * segundoNumero
                 print(f"Resultado: {primeiroNumero} * {segundoNumero} = {multiplicacao}")
             elif numeroEscolhido == 4:
-                divisao = primeiroNumero / segundoNumero
-                print(f"Resultado: {primeiroNumero} / {segundoNumero} = {divisao}")
+                if segundoNumero == 0:
+                    print("Não é possível realizar esta operação. Tente Novamente!")
+                else:
+                    divisao = primeiroNumero / segundoNumero
+                    print(f"Resultado: {primeiroNumero} / {segundoNumero} = {divisao}")
         else:
             print("Número Incorreto. Tente Novamente!")
     else:
